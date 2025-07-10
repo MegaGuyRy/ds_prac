@@ -66,3 +66,4 @@ test-results.xml
 
 # pytest cache
 .pytest_cache/
+api_key.txt
