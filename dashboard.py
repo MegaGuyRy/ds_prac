@@ -9,7 +9,6 @@ import numpy as np
 
 # Load API key from file
 API_KEY = st.secrets["API_KEY"]
-st.write("DEBUG API_KEY:", API_KEY)
 #with open("api_key.txt") as f:
     #API_KEY = f.read().strip()
 
@@ -34,8 +33,6 @@ series_id = COMMODITIES[option]
 # Build URL
 if option in ["WTI Crude Oil", "Brent Crude Oil", "Henry Hub Natural Gas"]:
     url = f"https://api.eia.gov/v2/{series_id}?api_key={API_KEY}"
-    st.write("DEBUG URL:", url)
-
 elif option == "NY Petroleum":
     facets = ("frequency=daily&data[]=value"
               "&facets[duoarea][]=Y35NY"
