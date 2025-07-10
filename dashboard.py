@@ -9,6 +9,7 @@ import numpy as np
 
 # Load API key from file
 API_KEY = st.secrets["API_KEY"]
+st.write("DEBUG API_KEY:", API_KEY)
 #with open("api_key.txt") as f:
     #API_KEY = f.read().strip()
 
