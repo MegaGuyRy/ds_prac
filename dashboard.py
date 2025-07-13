@@ -10,9 +10,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Load API key from file
-#API_KEY = st.secrets["API_KEY"]
-with open("api_key.txt") as f:
-    API_KEY = f.read().strip()
+API_KEY = st.secrets["API_KEY"]
+#with open("api_key.txt") as f:
+    #API_KEY = f.read().strip()
 
 # Commodity dictionary
 COMMODITIES = {
